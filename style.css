@@ -1,49 +1,116 @@
+/* General Body Styles */
 body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Modern sans-serif font */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #FFF3E0; /* Light orange/peach background */
+    color: #4A4A4A; /* Dark grey for text for readability */
 }
 
+/* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
+    background-color: #FFA726; /* Vibrant orange for header */
+    color: #FFFFFF; /* White text on header */
+    padding: 1.5em 0;
     text-align: center;
+    border-bottom: 3px solid #FB8C00; /* Darker orange border */
 }
 
 header h1 {
     margin: 0;
+    font-weight: bold;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    background-color: #444;
+    background-color: #FFB74D; /* Lighter orange for nav */
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 0; /* Remove margin, will be handled by padding in 'a' */
 }
 
 nav ul li a {
-    color: #fff;
+    color: #4A4A4A; /* Dark grey for nav links */
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 15px 25px; /* Increased padding for a more modern look */
     display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
 
-nav ul li a:hover {
-    background-color: #555;
+nav ul li a:hover, nav ul li a.active { /* Assuming an 'active' class could be added later for current page */
+    background-color: #FFA726; /* Vibrant orange on hover/active */
+    color: #FFFFFF; /* White text on hover/active */
 }
 
+/* Container for main content */
 .container {
-    width: 80%;
-    margin: auto;
+    width: 85%; /* Slightly wider container */
+    margin: 30px auto; /* Increased margin */
     overflow: hidden;
+    padding: 25px;
+    background-color: #FFFFFF; /* White background for content */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Subtle box shadow for depth */
+    border-radius: 8px; /* Rounded corners for modern feel */
+}
+
+/* Headings within container */
+.container h2 {
+    color: #FF8F00; /* Strong orange for section titles */
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    color: #FFA726; /* Lighter orange for sub-titles */
+}
+
+/* Form Styles (for Contact Us page) */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4A4A4A;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    padding: 10px;
+    border: 1px solid #FFCC80; /* Light orange border */
+    border-radius: 4px;
+    background-color: #FFF9C4; /* Very light yellow for input fields */
+}
+
+form button[type="submit"] {
+    background-color: #FFA726; /* Vibrant orange */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #FB8C00; /* Darker orange on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
     padding: 20px;
-    background-color: #fff;
+    background-color: #4A4A4A; /* Dark grey footer */
+    color: #FFF3E0; /* Light orange/peach text on footer */
+    margin-top: 30px;
 }
